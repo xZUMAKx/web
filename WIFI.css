@@ -1,0 +1,366 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff7e2e, #ffffff8e);
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(white 0.5px, transparent 0.5px);
+  background-size: 10px 10px;
+  opacity: 1px; 
+  animation: shimmer 6s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0 0; }
+  100% { background-position: 100px 100px; }
+}
+
+.ti {
+  color: rgb(255, 255, 255);
+  background-color: rgba(88, 70, 70, 0.164);
+  padding: 15px;
+  width: 45%;
+  margin: 20px auto 40px auto;
+  text-align: center;
+  font-size: 60px;
+  direction: rtl;
+  border-radius: 20px 20px;
+  box-shadow: 0 2px 20px 0 rgb(255 255 255 / 0.6);
+}
+
+.nx {
+  font-size: 40px;
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 4px #00000077;
+}
+
+.form-container {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+ 
+  margin-bottom: 30px;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.form-container input,
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form-container input {
+  background: #fff;
+  color: #333;
+}
+
+.form-container button {
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-container button:hover {
+  background: #333;
+}
+
+.logo-animation {
+  position: relative;
+  width: 320px;
+  height: 80px;
+  margin: 0 auto 30px auto;
+  background: linear-gradient(135deg, #ff8c42, #ffffff88);
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 2px 20px rgba(255 140 66, 0.6);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  font-family: 'Cairo', sans-serif;
+  display: flex;
+  align-items: center;  
+  justify-content: center; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo-animation .text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 80px;
+  opacity: 0;
+  animation: fadeText 9s ease-in-out infinite;
+  transition-timing-function: ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-animation .text:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.logo-animation .text:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.logo-animation .text:nth-child(3) {
+  animation-delay: 6s;
+}
+
+@keyframes fadeText {
+  0%, 25% { opacity: 1; }
+  33%, 100% { opacity: 0; }
+}
+
+.speed-select {
+  width: 106%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  color: #fff;
+}
+hr{
+color: #ff8a42;
+font-size: 20px;
+width: 0px;
+}
+.s{
+  background: rgba(0, 0, 0, 0.392);
+  backdrop-filter: blur(15px); 
+  -webkit-backdrop-filter: blur(15px);
+  padding: 20px;
+  border-radius: 16px;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.ff{
+  width: 94%;
+}
+
+.tit,
+.pt {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 15px; 
+  font-size: 21px;
+  direction: rtl;
+  margin: 10px 0;
+  text-align: center;
+  margin: 20px;
+  
+}
+
+.m{
+ background: rgba(9, 9, 9, 0.538);
+  backdrop-filter: blur(15px); 
+  -webkit-backdrop-filter: blur(15px);
+border-radius: 30px 30px;
+padding: 40px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  border: 3px solid rgba(255,255,255,0.3);
+  box-shadow:20px 50px #ffffff33 20px 50px;
+  color: #fff;
+}
+.j{
+margin-top: 1000px;
+
+}
+.SP{
+  font-size: 20px;
+  direction: rtl;
+color: #000000;
+}
+.hm{
+font-size: 70px;
+color: #ffffff;
+  background: linear-gradient(135deg, #ff8c42, #ffffff55);
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 2px 20px rgba(255 140 66, 0.6);
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+   
+  
+}
+.p2{
+    background: linear-gradient(135deg, #ff8c42, #ffffff55);
+  border-radius: 50px;
+  padding: 40px 200px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 30px rgba(255, 140, 66, 0.3);
+  color: #fff;
+  max-width: 500px;
+  margin: 50px auto;
+  font-family: 'Tajawal', sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+.dashboard-box-single p {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.dashboard-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.dashboard-actions {
+  margin-top: 30px;
+}
+
+.dashboard-btn {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dashboard-btn.logout {
+  background-color: #ff8c42;
+  color: white;
+  font-size: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.dashboard-btn.danger {
+  background-color: #d9534f;
+  color: white;
+}
+
+.dashboard-btn:hover {
+  opacity: 0.9;
+}
+
+ .mg{
+  margin-top: 25px;
+  font-size: 20px;
+  direction: rtl;
+}
+.spd{
+  background: #000000a2;
+  font-size: 30px;
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 20px;
+  color: #ffffff;
+}
+
+  @media (max-width: 768px){
+    .ti {
+      width: 60%;
+      font-size: 35px;
+    }
+    .logo-animation {
+      width: 50%;
+      font-size: 20px;
+      height: 60px;
+    }
+    .form-container {
+      width: 90%;
+      padding: 20px;
+    }
+    .nx {
+      font-size: 28px;
+    }
+    .speed-select {
+      font-size: 16px;
+      width: 100%;
+    }
+    .s {
+      font-size: 40px;
+    }
+    .tit,
+    .pt {
+    
+      font-size: 18px;
+    }
+    .p2 {
+      padding: 30px 20px;
+      font-size: 18px;
+      width: 90%;
+    }
+    .hm {
+      font-size: 32px;
+      padding: 10px;
+    }
+    .spd {
+      font-size: 16px;
+      padding: 10px;
+    }
+    .dashboard-btn {
+      font-size: 14px;
+      margin: 5px 5px;
+      padding: 10px 15px;
+    }
+    .mg {
+      font-size: 16px;
+    }
+  }
+
+   @media (max-width: 500px){
+    .ti{
+      font-size: 40px;
+    }
+    .tit,
+    .pt{
+      font-size: 15px;
+      padding: 0px;
+      gap: 8px;
+   
+      
+    }
+.form-container{
+padding: 10px;
+}
+
+
+   }
